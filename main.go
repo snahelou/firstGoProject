@@ -5,7 +5,6 @@ import (
 	"github.com/snahelou/firstGoProject/second"
 	"os"
 	log "github.com/Sirupsen/logrus"
-
 )
 
 func init() {
@@ -15,7 +14,6 @@ func init() {
 	})
 	log.SetOutput(os.Stderr)
 	log.SetLevel(log.DebugLevel)
-
 }
 func main() {
 	// Upper case = public func
@@ -28,7 +26,6 @@ func main() {
 	}
 
 	myObj.Print()
-
 	myObj.Loop()
 
 	err:= second.CallWS()
